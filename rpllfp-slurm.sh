@@ -7,6 +7,7 @@
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --cpus-per-task=1   # number of CPUs for this task
 
+#SBATCH --cpus-per-task=1	# number of processors per task
 #SBATCH -J "rpllfp"   # job name
 
 ## /SBATCH -p general # partition (queue)
@@ -18,4 +19,3 @@ python -u -c "import PyHipp as pyh; \
 import time; \
 pyh.RPLLFP(saveLevel=1); \
 print(time.localtime());"
-

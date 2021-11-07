@@ -6,6 +6,7 @@
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --cpus-per-task=5      # number of processors per task
+#SBATCH --cpus-per-task=5	# number of processors per task
 #SBATCH -J "rs3a"   # job name
 
 ## /SBATCH -p general # partition (queue)
